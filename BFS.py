@@ -26,9 +26,8 @@ def BFS(v):
 dx = [1, -1, 0, 0]
 dy = [0, 0, -1, 1]
 
-def bfs2(i,j):
-  q = deque([i,j])
-  temp = [[i,j]]
+def bfs2(x, y):
+  q = deque([x, y])
   while q:
     x, y = q.popleft()
     for i in range(4):
